@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #654ea3; 
+    background: linear-gradient(to left, #eaafc8, #654ea3); 
+}
+.carousel-inner{
+    max-height: 100vh;
+}
+.navbar{
+    margin: 0;
+
+}
