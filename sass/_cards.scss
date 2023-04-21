@@ -1,6 +1,28 @@
 body{
     section{
         article{
+            .card-body{
+                h5{
+                    font-size: 40px;
+                }
+                font-size: 20px;
+                height: 400px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+            }
+            .Reiki{
+                background-image:url(../assets/img/4.jpg);
+            }
+            .FengShui{
+                background-image:url(../assets/img/3.jpg);
+            }
+            .BarrasAccess{
+                background-image:url(../assets/img/2.jpg);
+            }
+            .CalendarioMaya{
+                background-image:url(../assets/img/1.jpg);
+            }
             .TituloCursos{
                 margin: 20px;
                 .row{
@@ -15,6 +37,7 @@ body{
                 .ImgCursos{
                     background-image:url(../assets/img/5.jpg);
                     h5{ 
+                        color: rgb(116, 32, 125);
                         font-size: 50px;
                     }
                 }
