@@ -1,0 +1,16 @@
+body{
+    background: #654ea3; 
+    background: linear-gradient(to left, #eaafc8, #654ea3);
+    section{
+        #scrollspyHeading1{
+            height: 100vh;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        article{
+            margin-bottom: 100px;
+        }
+    }
+}

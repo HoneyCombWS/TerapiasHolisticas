@@ -11,7 +11,3 @@ body{
     background: #654ea3; 
     background: linear-gradient(to left, #eaafc8, #654ea3); 
 }
-.navbar{
-    box-shadow: 10px 10px 50px;
-    background-color: rgba(192, 168, 168, 0.705);
-}

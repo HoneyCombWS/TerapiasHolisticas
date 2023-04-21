@@ -1,15 +1,21 @@
 {
-  "name": "terapias-holisticas-evelyn-otero",
+  "name": "terapias",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000t\u0000e\u0000r\u0000a\u0000p\u0000i\u0000a\u0000s\u0000-\u0000h\u0000o\u0000l\u0000i\u0000s\u0000t\u0000i\u0000c\u0000a\u0000s\u0000\r\u0000 \u0000",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.0-alpha3"
-  }
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
 }
