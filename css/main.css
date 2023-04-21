@@ -8,23 +8,40 @@ body .navbar {
   width: 100%; }
 
 body nav {
-  opacity: 0.8;
   box-shadow: 10px 10px 50px;
-  background-color: rgba(192, 168, 168, 0.705); }
+  background-color: rgba(192, 168, 168, 0.7); }
   body nav ul li .nav-link {
+    font-size: 17px;
     margin: 5px;
-    color: black;
-    background-color: rgba(255, 228, 196, 0.498); }
+    color: #41005d;
+    background-color: #c0a8a8; }
   body nav .logo {
     width: 10rem; }
 
 body {
-  background: #654ea3;
-  background: linear-gradient(to left, #eaafc8, #654ea3); }
+  background: #eda6f058;
+  /* background: linear-gradient(to left, #eaafc8, #654ea3); */ }
   body section #scrollspyHeading1 {
     height: 100vh; }
     body section #scrollspyHeading1 img {
       width: 100%;
       height: 100%; }
   body section article {
-    margin-bottom: 100px; }
+    margin-bottom: 30px; }
+
+body section article .TituloCursos {
+  margin: 20px; }
+  body section article .TituloCursos .row {
+    padding-bottom: 10px; }
+  body section article .TituloCursos .card-body {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center; }
+  body section article .TituloCursos .ImgCursos {
+    background-image: url(../assets/img/5.jpg); }
+    body section article .TituloCursos .ImgCursos h5 {
+      font-size: 50px; }
+
+body section article .cards {
+  margin: 50px; }
