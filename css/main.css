@@ -4,10 +4,12 @@
   text-decoration: none;
   list-style: none; }
 
-body .navbar {
-  width: 100%; }
+body {
+  background-color: rgba(237, 166, 240, 0.345); }
 
 body nav {
+  width: 100%;
+  height: 70px;
   box-shadow: 10px 10px 50px;
   background-color: rgba(192, 168, 168, 0.7); }
   body nav ul li .nav-link {
@@ -16,54 +18,90 @@ body nav {
     color: #41005d;
     background-color: #c0a8a8; }
   body nav .logo {
-    width: 10rem; }
+    width: 10%; }
 
 body {
-  background: #eda6f058;
+  /* background: #eda6f058; */
   /* background: linear-gradient(to left, #eaafc8, #654ea3); */ }
   body section #scrollspyHeading1 {
-    height: 100vh; }
-    body section #scrollspyHeading1 img {
-      width: 100%;
-      height: 100%; }
+    max-height: 100vh; }
+  body section #scrollspyHeading2 {
+    max-height: 100vh;
+    display: flex;
+    align-items: center; }
   body section article {
-    margin-bottom: 30px; }
+    /* margin-bottom: 30px; */ }
 
-body section article .card-body {
-  font-size: 20px;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center; }
-  body section article .card-body h5 {
-    font-size: 40px; }
-
-body section article .Reiki {
-  background-image: url(../assets/img/4.jpg); }
-
-body section article .FengShui {
-  background-image: url(../assets/img/3.jpg); }
-
-body section article .BarrasAccess {
-  background-image: url(../assets/img/2.jpg); }
-
-body section article .CalendarioMaya {
-  background-image: url(../assets/img/1.jpg); }
-
-body section article .TituloCursos {
-  margin: 20px; }
-  body section article .TituloCursos .row {
-    padding-bottom: 10px; }
-  body section article .TituloCursos .card-body {
-    height: 300px;
+body section .clases {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0); }
+  body section .clases .Encavezado {
+    height: 15%;
+    background-color: rgba(237, 166, 240, 0);
+    /* background-image:url(../assets/img/5.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center; }
-  body section article .TituloCursos .ImgCursos {
-    background-image: url(../assets/img/5.jpg); }
-    body section article .TituloCursos .ImgCursos h5 {
-      color: #74207d;
-      font-size: 50px; }
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* box-shadow: 10px 10px 50px; */
+    border: none; }
+    body section .clases .Encavezado .card-title {
+      font-size: 40px;
+      margin: 0;
+      /* padding: 5px; */
+      color: black;
+      /* background-color: rgba(254, 254, 254, 0.445); */ }
+  body section .clases .cards {
+    margin: 0px 80px 0px 80px;
+    height: 90%; }
+    body section .clases .cards .card-body:hover {
+      box-shadow: 10px 10px 50px; }
+      body section .clases .cards .card-body:hover .card-text {
+        display: inline-block; }
+    body section .clases .cards .text-area {
+      background-color: rgba(254, 254, 254, 0.445);
+      padding: 10px;
+      box-shadow: 10px 10px 50px; }
+      body section .clases .cards .text-area .card-title {
+        font-size: 25px;
+        margin: 0px; }
+      body section .clases .cards .text-area .card-text {
+        font-size: 18px;
+        display: none; }
+    body section .clases .cards .Reiki {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../assets/img/4.jpg); }
+    body section .clases .cards .FengShui {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../assets/img/3.jpg); }
+    body section .clases .cards .BarrasAccess {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../assets/img/2.jpg); }
+    body section .clases .cards .CalendarioMaya {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../assets/img/1.jpg); }
+    body section .clases .cards .Tarot {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../assets/img/4.jpg); }
+    body section .clases .cards .Gemoterapia {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../assets/img/3.jpg); }
+    body section .clases .cards .FloresBach {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../assets/img/2.jpg); }
+    body section .clases .cards .ReikiUsui {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../assets/img/1.jpg); }
 
-body section article .cards {
-  margin: 50px; }
+body section article .carousel img {
+  height: 100vh; }

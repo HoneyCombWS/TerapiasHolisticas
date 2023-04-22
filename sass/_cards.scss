@@ -1,49 +1,90 @@
 body{
     section{
-        article{
-            .card-body{
-                h5{
-                    font-size: 40px;
-                }
-                font-size: 20px;
-                height: 400px;
+        .clases{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0); 
+            .Encavezado{
+                height:15%;
+                background-color: rgba(237, 166, 240, 0); 
+                /* background-image:url(../assets/img/5.jpg); */
                 background-repeat: no-repeat;
                 background-size: cover;
+                display: none;
                 text-align: center;
-            }
-            .Reiki{
-                background-image:url(../assets/img/4.jpg);
-            }
-            .FengShui{
-                background-image:url(../assets/img/3.jpg);
-            }
-            .BarrasAccess{
-                background-image:url(../assets/img/2.jpg);
-            }
-            .CalendarioMaya{
-                background-image:url(../assets/img/1.jpg);
-            }
-            .TituloCursos{
-                margin: 20px;
-                .row{
-                padding-bottom: 10px;
-                }
-                .card-body{
-                    height: 300px;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    text-align: center;
-                }
-                .ImgCursos{
-                    background-image:url(../assets/img/5.jpg);
-                    h5{ 
-                        color: rgb(116, 32, 125);
-                        font-size: 50px;
-                    }
+                justify-content: center;
+                margin-bottom: 20px;
+                /* box-shadow: 10px 10px 50px; */
+                border: none;
+                .card-title{
+                    font-size: 40px;
+                    margin: 0;
+                    /* padding: 5px; */
+                    color: rgb(0, 0, 0);
+                    /* background-color: rgba(254, 254, 254, 0.445); */
                 }
             }
             .cards{
-                margin: 50px;
+                margin:0px 80px 0px 80px;
+                height: 90%;
+                .card-body:hover{
+                    box-shadow: 10px 10px 50px;
+                    .card-text{
+                        display: inline-block;
+                    }
+                }
+                .text-area{
+                    background-color: rgba(254, 254, 254, 0.445);
+                    padding: 10px;
+                    box-shadow: 10px 10px 50px;
+                    .card-title{
+                        font-size: 25px;
+                        margin: 0px;
+                    }
+                    .card-text{
+                        font-size: 18px;
+                        display: none;
+                    }
+                }
+                .Reiki{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image:url(../assets/img/4.jpg);
+                }
+                .FengShui{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image:url(../assets/img/3.jpg);
+                }
+                .BarrasAccess{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image:url(../assets/img/2.jpg);
+                }
+                .CalendarioMaya{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image:url(../assets/img/1.jpg);
+                }
+                .Tarot{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image:url(../assets/img/4.jpg);
+                }
+                .Gemoterapia{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image:url(../assets/img/3.jpg);
+                }
+                .FloresBach{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image:url(../assets/img/2.jpg);
+                }
+                .ReikiUsui{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image:url(../assets/img/1.jpg);
+                }
             }
         }
     }
