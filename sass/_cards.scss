@@ -3,6 +3,19 @@ body{
         .clases{
             height: 100vh;
             background-color: rgba(0, 0, 0, 0); 
+            .TituloClases{
+                width: 5%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                h3{
+                    word-wrap: break-word;
+                    text-align:center;
+                    width:20px;
+                    /* writing-mode: vertical-lr;
+                    transform: rotate(180deg); */
+                }
+            }
             .Encavezado{
                 height:15%;
                 background-color: rgba(237, 166, 240, 0); 

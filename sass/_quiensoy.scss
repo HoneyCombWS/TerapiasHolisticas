@@ -1,0 +1,27 @@
+body{
+    section{
+        #scrollspyHeading3{
+            height: 100vh;
+            padding-top: 10px;
+            .quienSoy{
+                background-image:url(../assets/img/6.JPG);
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                min-height: 85%;
+                height:auto;
+                margin: 80px;
+                .body-quiensoy{
+                    padding: 50px;
+                    margin: 30px;
+                    width: 50%;
+                    height: auto;
+                    box-shadow: 10px 10px 50px;
+                     /*display: flex; */
+                    text-align: start;
+                    background-color: rgba(192, 168, 168, 0.7);
+                }
+            }
+        }
+    }
+}
