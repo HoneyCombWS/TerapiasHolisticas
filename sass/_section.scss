@@ -3,15 +3,24 @@ body{
     /* background: linear-gradient(to left, #eaafc8, #654ea3); */
     section{
         #scrollspyHeading1{
-            max-height: 100vh;
-        }
-        #scrollspyHeading2{
-            max-height: 100vh;
-            display: flex;
+            width: 100%;
+            height: 100vh;
             align-items: center;
         }
-        article{
-            /* margin-bottom: 30px; */
+        #scrollspyHeading2{
+            padding: 80px;
+            height: 100vh;
+            align-items: center;
+        }
+        #scrollspyHeading3{
+            padding: 80px;
+            height: 100vh;
+            align-items: center;
+        }
+        #scrollspyHeading4{
+            padding: 80px;
+            height: 100vh;
+            align-items: center;
         }
     }
 }

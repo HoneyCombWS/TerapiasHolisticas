@@ -1,0 +1,82 @@
+/* Formulario Contacto */
+@-webkit-keyframes scale-up-hor-left {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    }
+    100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    }
+}
+@keyframes scale-up-hor-left {
+    0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    }
+    100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    }
+}
+body{
+    section{
+        #scrollspyHeading4{
+            div{
+                background-image:url(../assets/img/4.JPG);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100%;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                .formulario-body{
+                    background-color: rgba(192, 168, 168, 0.7);
+                    padding: 80px;
+                    margin: 20px;
+                    border-radius: 8px;
+                    width: 50%;
+                    font-family: Calibri, "Trebuchet MS", sans-serif;
+                    color: white;
+                    box-shadow: 10px 10px 50px rgb(8, 8, 8);
+                    .formulario-contacto{
+                        width: 100%;
+                        background-color: #24303c;
+                        padding: 15px;
+                        border-radius: none;
+                        /* font-family: Calibri, "Trebuchet MS", sans-serif; */
+                        font-size: 15px;
+                        color: white;
+                    }
+                    .boton {
+                        background-color: #94347c;
+                        border: none;
+                        padding: 12px;
+                        color: white;
+                        margin: 16px 0;
+                        font-size: 16px;
+                        box-shadow: 10px 10px 50px rgb(8, 8, 8);
+                    }
+                    .boton:hover {
+                        background-color: #33122b;
+                    }
+                }
+            }
+            div:hover{
+                .formulario-body{
+                -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                }
+            }
+        }
+    }
+}
