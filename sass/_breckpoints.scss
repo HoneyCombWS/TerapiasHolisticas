@@ -1,0 +1,109 @@
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+    body{
+        .nav1{
+            display: none;
+        }
+        .nav2{
+            display: block;
+        }
+        section{
+            #scrollspyHeading2{
+                .cards-grid{
+                    display: none;
+                }
+                .carousel-cards{
+                    display: block;
+                }
+            } 
+            #scrollspyHeading3{
+                display: none;
+            }
+            #scrollspyHeading4{
+                display: none;
+            }
+        }
+    }
+} */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    body{
+        .nav1{
+            display: none;
+        }
+        .nav2{
+            display: block;
+        }
+        section{
+            #scrollspyHeading1{
+                height: 50vh;
+            }
+            #scrollspyHeading2{
+                padding: 10px;
+                height: auto;
+                .cards-grid{
+                    display: none;
+                }
+                .carousel-cards{
+                    display: block;
+                }
+            }   
+            #scrollspyHeading3{
+                padding: 10px;
+                height: 600px;
+                .about{
+                    &-img{
+                        h5{
+                            font-size: 30px;
+                        }
+                    }
+                    &-text{
+                        overflow: scroll;
+                        p{
+                            font-size: 15px;
+                        }
+                        h5{
+                            font-size: 20px;
+                            
+                        }
+                    }
+                }
+            }
+            #scrollspyHeading4{
+                padding: 10px;
+                height: 600px;
+                display: block;
+                .contact{
+                    height: 100%;
+                    form{
+                        padding: 0px;
+                        background-color: rgba(255, 255, 255, 0);
+                        box-shadow: none;
+                        legend{
+                            font-size: 20px;
+                            padding: 0px;
+                            input{
+                                padding: 5px;
+                            }
+                            input{
+
+                            }
+                        }
+                    }
+                    &-title{
+                        overflow: scroll;
+                        h5{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            display: none;
+        }
+    }
+}

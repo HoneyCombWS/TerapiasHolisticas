@@ -21,4 +21,5 @@ carouselControl.forEach(control => {
     }
     carousel.style.transform = `translateX(${-carouselWidth * counter}px)`;
     });
-});
+    
+    

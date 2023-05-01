@@ -7,17 +7,22 @@
 body {
   background-color: rgba(237, 166, 240, 0.345); }
 
-body nav {
+body .nav2 {
+  display: none;
+  background-color: none;
+  width: auto; }
+
+body .nav1 {
   width: 100%;
   height: auto;
   box-shadow: 10px 10px 50px;
   background-color: rgba(192, 168, 168, 0.7); }
-  body nav ul li .nav-link {
+  body .nav1 ul li .nav-link {
     font-size: 17px;
     margin: 5px;
     color: #41005d;
     background-color: #c0a8a8; }
-  body nav .logo {
+  body .nav1 .logo {
     width: 10%; }
 
 body {
@@ -26,123 +31,158 @@ body {
   body section #scrollspyHeading1 {
     width: 100%;
     height: 100vh;
-    align-items: center; }
+    border-bottom: #3b3b3b solid 1px; }
   body section #scrollspyHeading2 {
     padding: 80px;
     height: 100vh;
-    align-items: center; }
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    border-bottom: #3b3b3b solid 1px; }
   body section #scrollspyHeading3 {
-    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100vh;
-    align-items: center; }
+    border-bottom: #3b3b3b solid 1px;
+    padding: 80px; }
   body section #scrollspyHeading4 {
     padding: 80px;
-    height: 100vh;
-    align-items: center; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; }
 
-@-webkit-keyframes flip-scale-down-ver {
-  0% {
-    -webkit-transform: scale(1) rotateY(0);
-    transform: scale(1) rotateY(0); }
-  50% {
-    -webkit-transform: scale(0.4) rotateY(-90deg);
-    transform: scale(0.4) rotateY(-90deg); }
-  100% {
-    -webkit-transform: scale(1) rotateY(-180deg);
-    transform: scale(1) rotateY(-180deg); } }
-
-@keyframes flip-scale-down-ver {
-  0% {
-    -webkit-transform: scale(1) rotateY(0);
-    transform: scale(1) rotateY(0); }
-  50% {
-    -webkit-transform: scale(0.4) rotateY(-90deg);
-    transform: scale(0.4) rotateY(-90deg); }
-  100% {
-    -webkit-transform: scale(1) rotateY(-180deg);
-    transform: scale(1) rotateY(-180deg); } }
-
-body section #scrollspyHeading2 .clases {
-  background-color: rgba(0, 0, 0, 0);
-  width: auto;
-  height: 100%;
-  border-radius: 5px; }
-  body section #scrollspyHeading2 .clases .cards {
-    height: 50%; }
-    body section #scrollspyHeading2 .clases .cards .col {
-      min-height: 100%;
-      padding: 10px; }
-    body section #scrollspyHeading2 .clases .cards .text-area {
-      height: auto;
-      background-color: rgba(254, 254, 254, 0.445);
-      padding: 10px;
-      box-shadow: 10px 10px 50px; }
-      body section #scrollspyHeading2 .clases .cards .text-area .card-title {
-        font-size: 25px;
-        margin: 0px; }
-      body section #scrollspyHeading2 .clases .cards .text-area .card-text {
-        font-size: 18px;
-        display: none; }
-    body section #scrollspyHeading2 .clases .cards .Reiki {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../assets/img/4.jpg); }
-    body section #scrollspyHeading2 .clases .cards .FengShui {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../assets/img/3.jpg); }
-    body section #scrollspyHeading2 .clases .cards .BarrasAccess {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../assets/img/2.jpg); }
-    body section #scrollspyHeading2 .clases .cards .CalendarioMaya {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../assets/img/1.jpg); }
-    body section #scrollspyHeading2 .clases .cards .Tarot {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../assets/img/4.jpg); }
-    body section #scrollspyHeading2 .clases .cards .Gemoterapia {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../assets/img/3.jpg); }
-    body section #scrollspyHeading2 .clases .cards .FloresBach {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../assets/img/2.jpg); }
-    body section #scrollspyHeading2 .clases .cards .ReikiUsui {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../assets/img/1.jpg); }
-  body section #scrollspyHeading2 .clases .card:hover {
-    -webkit-animation: flip-scale-down-ver 0.5s linear both;
-    animation: flip-scale-down-ver 0.5s linear both; }
-    body section #scrollspyHeading2 .clases .card:hover .card-body {
-      box-shadow: 10px 10px 50px;
+body section #scrollspyHeading2 .cards-grid {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px; }
+  body section #scrollspyHeading2 .cards-grid .card-flip {
+    width: 350px;
+    height: 100%;
+    perspective: 2000px;
+    margin: 10px; }
+    body section #scrollspyHeading2 .cards-grid .card-flip-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      transform-style: preserve-3d;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.879);
+      position: relative;
+      transition: all 550ms; }
+    body section #scrollspyHeading2 .cards-grid .card-flip-front, body section #scrollspyHeading2 .cards-grid .card-flip-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 20px;
+      backface-visibility: hidden; }
+    body section #scrollspyHeading2 .cards-grid .card-flip-front {
       display: flex;
       justify-content: center;
-      align-items: center; }
-      body section #scrollspyHeading2 .clases .card:hover .card-body .text-area {
-        transform: rotateY(180deg);
-        height: 100%; }
-        body section #scrollspyHeading2 .clases .card:hover .card-body .text-area .card-text {
-          display: inline-block; }
+      align-items: center;
+      background-image: url(../assets/img/1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      body section #scrollspyHeading2 .cards-grid .card-flip-front .card-title {
+        text-align: center;
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(254, 254, 254, 0.445);
+        margin-top: 5px;
+        font-size: 30px; }
+    body section #scrollspyHeading2 .cards-grid .card-flip-back {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      padding: 32px;
+      text-align: center;
+      background-color: rgba(254, 254, 254, 0.445);
+      transform: rotateY(180deg); }
+    body section #scrollspyHeading2 .cards-grid .card-flip:hover .card-flip-inner {
+      transform: rotateY(-180deg); }
 
-body section article .carousel img {
-  height: 100vh; }
+body section #scrollspyHeading2 .carousel-cards {
+  width: 100%;
+  height: 100%;
+  display: none; }
+  body section #scrollspyHeading2 .carousel-cards .carousel {
+    height: 100%; }
+    body section #scrollspyHeading2 .carousel-cards .carousel-inner {
+      height: 100%; }
+    body section #scrollspyHeading2 .carousel-cards .carousel-item {
+      height: 100%; }
+  body section #scrollspyHeading2 .carousel-cards .cards-grid2 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between; }
+    body section #scrollspyHeading2 .carousel-cards .cards-grid2 .card-flip {
+      width: 100%;
+      height: 100%;
+      perspective: 2000px;
+      margin: 10px; }
+      body section #scrollspyHeading2 .carousel-cards .cards-grid2 .card-flip-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        transform-style: preserve-3d;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.879);
+        position: relative;
+        transition: all 550ms; }
+      body section #scrollspyHeading2 .carousel-cards .cards-grid2 .card-flip-front, body section #scrollspyHeading2 .carousel-cards .cards-grid2 .card-flip-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 20px;
+        backface-visibility: hidden; }
+      body section #scrollspyHeading2 .carousel-cards .cards-grid2 .card-flip-front {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../assets/img/1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+        body section #scrollspyHeading2 .carousel-cards .cards-grid2 .card-flip-front .card-title {
+          text-align: center;
+          width: 100%;
+          border-radius: 10px;
+          padding: 10px;
+          background-color: rgba(254, 254, 254, 0.445);
+          margin-top: 5px;
+          font-size: 30px; }
+      body section #scrollspyHeading2 .carousel-cards .cards-grid2 .card-flip-back {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        border-radius: 20px;
+        padding: 32px;
+        text-align: center;
+        background-color: rgba(254, 254, 254, 0.445);
+        transform: rotateY(180deg); }
+      body section #scrollspyHeading2 .carousel-cards .cards-grid2 .card-flip:hover .card-flip-inner {
+        transform: rotateY(-180deg); }
 
-@-webkit-keyframes scale-up-hor-right {
-  0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%; }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%; } }
+body section article .carousel {
+  height: 100%; }
+  body section article .carousel-inner {
+    height: 100%; }
+  body section article .carousel-item {
+    height: 100%; }
+  body section article .carousel img {
+    height: 100%; }
 
 @keyframes scale-up-hor-right {
   0% {
@@ -156,43 +196,47 @@ body section article .carousel img {
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%; } }
 
-body section #scrollspyHeading3 .quienSoy {
+body section #scrollspyHeading3 .about {
+  /* margin: 80px; */
+  height: 100%;
+  width: 100%;
   background-image: url(../assets/img/6.JPG);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  border-radius: 10px;
   display: flex;
-  justify-content: end;
-  align-items: end;
-  width: auto;
-  height: 100%;
-  border-radius: 10px; }
-  body section #scrollspyHeading3 .quienSoy .body-quiensoy {
-    padding: 50px;
-    margin: 30px;
-    width: 50%;
+  flex-wrap: nowrap;
+  flex-direction: column; }
+  body section #scrollspyHeading3 .about-img {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body section #scrollspyHeading3 .about-img h5 {
+      text-align: center;
+      margin: none;
+      font-size: 50px;
+      color: white; }
+  body section #scrollspyHeading3 .about-text {
+    background-color: rgba(192, 168, 168, 0.7);
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
     height: auto;
-    box-shadow: 10px 10px 50px;
-    /*display: flex; */
-    text-align: start;
-    background-color: rgba(192, 168, 168, 0.7); }
-
-body section #scrollspyHeading3 .quienSoy:hover .body-quiensoy {
-  -webkit-animation: scale-up-hor-right 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-hor-right 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: 10px 10px 50px #080808;
+    color: white; }
+    body section #scrollspyHeading3 .about-text h5 {
+      font-size: 30px; }
+    body section #scrollspyHeading3 .about-text p {
+      font-size: 20px; }
 
 /* Formulario Contacto */
-@-webkit-keyframes scale-up-hor-left {
-  0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%; }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%; } }
-
 @keyframes scale-up-hor-left {
   0% {
     -webkit-transform: scaleX(0.4);
@@ -205,16 +249,17 @@ body section #scrollspyHeading3 .quienSoy:hover .body-quiensoy {
     -webkit-transform-origin: 0% 0%;
     transform-origin: 0% 0%; } }
 
-body section #scrollspyHeading4 div {
+body section #scrollspyHeading4 .contact {
   background-image: url(../assets/img/4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  width: 100%;
+  height: 90vh;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: start; }
-  body section #scrollspyHeading4 div .formulario-body {
+  body section #scrollspyHeading4 .contact-form {
     background-color: rgba(192, 168, 168, 0.7);
     padding: 80px;
     margin: 20px;
@@ -223,7 +268,7 @@ body section #scrollspyHeading4 div {
     font-family: Calibri, "Trebuchet MS", sans-serif;
     color: white;
     box-shadow: 10px 10px 50px #080808; }
-    body section #scrollspyHeading4 div .formulario-body .formulario-contacto {
+    body section #scrollspyHeading4 .contact-form-name, body section #scrollspyHeading4 .contact-form-email, body section #scrollspyHeading4 .contact-form-tel {
       width: 100%;
       background-color: #24303c;
       padding: 15px;
@@ -231,7 +276,7 @@ body section #scrollspyHeading4 div {
       /* font-family: Calibri, "Trebuchet MS", sans-serif; */
       font-size: 15px;
       color: white; }
-    body section #scrollspyHeading4 div .formulario-body .boton {
+    body section #scrollspyHeading4 .contact-form .boton {
       background-color: #94347c;
       border: none;
       padding: 12px;
@@ -239,12 +284,98 @@ body section #scrollspyHeading4 div {
       margin: 16px 0;
       font-size: 16px;
       box-shadow: 10px 10px 50px #080808; }
-    body section #scrollspyHeading4 div .formulario-body .boton:hover {
+    body section #scrollspyHeading4 .contact-form .boton:hover {
       background-color: #33122b; }
+  body section #scrollspyHeading4 .contact-title {
+    padding-top: 50px;
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px; }
+    body section #scrollspyHeading4 .contact-title h5 {
+      font-size: 40px; }
 
-body section #scrollspyHeading4 div:hover .formulario-body {
-  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+    body{
+        .nav1{
+            display: none;
+        }
+        .nav2{
+            display: block;
+        }
+        section{
+            #scrollspyHeading2{
+                .cards-grid{
+                    display: none;
+                }
+                .carousel-cards{
+                    display: block;
+                }
+            } 
+            #scrollspyHeading3{
+                display: none;
+            }
+            #scrollspyHeading4{
+                display: none;
+            }
+        }
+    }
+} */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  body .nav1 {
+    display: none; }
+  body .nav2 {
+    display: block; }
+  body section #scrollspyHeading1 {
+    height: 50vh; }
+  body section #scrollspyHeading2 {
+    padding: 10px;
+    height: auto; }
+    body section #scrollspyHeading2 .cards-grid {
+      display: none; }
+    body section #scrollspyHeading2 .carousel-cards {
+      display: block; }
+  body section #scrollspyHeading3 {
+    padding: 10px;
+    height: 600px; }
+    body section #scrollspyHeading3 .about-img h5 {
+      font-size: 30px; }
+    body section #scrollspyHeading3 .about-text {
+      overflow: scroll; }
+      body section #scrollspyHeading3 .about-text p {
+        font-size: 15px; }
+      body section #scrollspyHeading3 .about-text h5 {
+        font-size: 20px; }
+  body section #scrollspyHeading4 {
+    padding: 10px;
+    height: 600px;
+    display: block; }
+    body section #scrollspyHeading4 .contact {
+      height: 100%; }
+      body section #scrollspyHeading4 .contact form {
+        padding: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none; }
+        body section #scrollspyHeading4 .contact form legend {
+          font-size: 20px;
+          padding: 0px; }
+          body section #scrollspyHeading4 .contact form legend input {
+            padding: 5px; }
+      body section #scrollspyHeading4 .contact-title {
+        overflow: scroll; }
+        body section #scrollspyHeading4 .contact-title h5 {
+          font-size: 20px; }
+        body section #scrollspyHeading4 .contact-title p {
+          font-size: 15px; }
+  body footer {
+    display: none; } }
 
 footer {
   background-color: #000000;
